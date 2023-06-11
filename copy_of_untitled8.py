@@ -3,8 +3,8 @@ import streamlit as st
 import openai
 
 # Set up OpenAI API credentials
-
-openai.api_key = "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"
+st.caption("Praneeth")
+openai.api_key = "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"
 
 # Define the chatbot function
 
@@ -16,7 +16,7 @@ def chatbot(message):
 
         prompt=message,
 
-        max_tokens=100,
+        max_tokens=1000,
 
         temperature=0.6,
 
@@ -53,7 +53,3 @@ if st.button("Send"):
     else:
 
         st.warning("Please enter a message.")
-
-# Add a link to the OpenAI API
-
-st.markdown("[Powered by OpenAI](https://openai.com)")
